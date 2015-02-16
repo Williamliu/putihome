@@ -1,0 +1,46 @@
+TRUNCATE TABLE event_calendar;
+TRUNCATE TABLE event_calendar_date;
+TRUNCATE TABLE event_calendar_enroll;
+TRUNCATE TABLE  event_calendar_attend;
+
+TRUNCATE TABLE puti_answers;
+TRUNCATE TABLE puti_attend;
+TRUNCATE TABLE puti_class;
+TRUNCATE TABLE puti_class_checkin;
+TRUNCATE TABLE puti_class_date;
+TRUNCATE TABLE puti_department;
+TRUNCATE TABLE puti_department_job;
+TRUNCATE TABLE puti_department_volunteer;
+TRUNCATE TABLE puti_device_record;
+TRUNCATE TABLE puti_devices;
+
+TRUNCATE TABLE puti_email;
+TRUNCATE TABLE puti_idd;
+TRUNCATE TABLE puti_members;
+TRUNCATE TABLE puti_members_hearfrom;
+TRUNCATE TABLE puti_members_lang;
+
+
+TRUNCATE TABLE puti_members_others;
+TRUNCATE TABLE puti_members_symptom;
+TRUNCATE TABLE puti_sites_branchs;
+
+TRUNCATE TABLE puti_volunteer;
+TRUNCATE TABLE puti_volunteer_hours;
+
+TRUNCATE TABLE website_session;
+
+DELETE FROM website_admins WHERE id > 2;
+
+TRUNCATE TABLE pt_site_attribute;
+TRUNCATE TABLE pt_site_department;
+TRUNCATE TABLE pt_volunteer;
+TRUNCATE TABLE pt_volunteer_degree;
+TRUNCATE TABLE pt_volunteer_depart_current;
+TRUNCATE TABLE pt_volunteer_depart_will;
+TRUNCATE TABLE pt_volunteer_health;
+TRUNCATE TABLE pt_volunteer_others;
+TRUNCATE TABLE pt_volunteer_professional;
+TRUNCATE TABLE pt_volunteer_schedule;
+TRUNCATE TABLE pt_volunteer_schedule_day;
+

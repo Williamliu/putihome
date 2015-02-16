@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" factory="System.ServiceModel.Activation.WebServiceHostFactory"  Service="puti_service.puti_contract" CodeBehind="puti_contract.cs" %>

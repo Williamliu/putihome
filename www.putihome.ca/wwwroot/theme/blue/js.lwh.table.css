@@ -1,0 +1,247 @@
+/****  page navigator ************************************/
+a.tabQuery-dbnav {
+	position:	relative;
+	display:	inline-block;
+	width:		24px;
+	height:		24px;
+	
+	background-image:	url(image/icon/nav_all.png);
+	background-repeat:	no-repeat;
+	vertical-align:		middle;
+}
+
+div.tabQuery-dbnav-background {
+	background-color:		#cccccc; 
+	background-image:		url(image/icon/nav_bar_bg.png);
+	background-repeat:		repeat-x;
+	background-position:	center center;
+	vertical-align:			middle;
+	padding:				1px; 
+	
+	border-top:				1px solid #cccccc;
+	border-bottom:			1px solid #cccccc;
+	/*
+	border-top:				1px solid #90bce2;
+	border-bottom:			1px solid #026167;
+	*/
+	height:					24px;
+}
+
+
+a.tabQuery-dbnav-first {
+	background-position:	0px 0px;
+}
+a.tabQuery-dbnav-first:hover {
+	background-position:	0px -24px;
+}
+a.tabQuery-dbnav-first-na,
+a.tabQuery-dbnav-first-na:hover {
+	background-position:	0px -48px;
+}
+
+a.tabQuery-dbnav-prev {
+	background-position:	-24px 0px;
+}
+a.tabQuery-dbnav-prev:hover {
+	background-position:	-24px -24px;
+}
+a.tabQuery-dbnav-prev-na,
+a.tabQuery-dbnav-prev-na:hover {
+	background-position:	-24px -48px;
+}
+
+a.tabQuery-dbnav-next {
+	background-position:	-48px 0px;
+}
+a.tabQuery-dbnav-next:hover {
+	background-position:	-48px -24px;
+}
+a.tabQuery-dbnav-next-na,
+a.tabQuery-dbnav-next-na:hover {
+	background-position:	-48px -48px;
+}
+
+a.tabQuery-dbnav-last {
+	background-position:	-72px 0px;
+}
+a.tabQuery-dbnav-last:hover {
+	background-position:	-72px -24px;
+}
+a.tabQuery-dbnav-last-na,
+a.tabQuery-dbnav-last-na:hover {
+	background-position:	-72px -48px;
+}
+
+a.tabQuery-dbnav-go {
+	background-position:	-96px 0px;
+}
+a.tabQuery-dbnav-go:hover {
+	background-position:	-96px -24px;
+}
+a.tabQuery-dbnav-go-na,
+a.tabQuery-dbnav-go-na:hover {
+	background-position:	-96px -48px;
+}
+
+
+a.tabQuery-dbnav-loading {
+	background-image:		url(image/icon/nav_loading.gif);
+	background-repeat:		no-repeat;
+	background-position:	center center;
+	
+}
+
+a.tabQuery-dbnav-loading-na {
+	visibility:				hidden;
+}
+
+/****** button for view, excel, delete *************/
+a.tabQuery-button {
+	display: 				inline-block;
+	width:					20px;
+	height:					20px;
+	background-image:		url(image/icon/btn-record.png);
+	background-repeat:		no-repeat;
+}
+
+a.tabQuery-button-view {
+	background-position:	0px center;
+}
+
+a.tabQuery-button-output {
+	background-position:	-25px center;
+}
+
+a.tabQuery-button-delete {
+	background-position:	-50px center;
+}
+
+a.tabQuery-button-save {
+	background-position:	-75px center;
+}
+
+a.tabQuery-button-delete-small {
+	display: 				inline-block;
+	width:					16px;
+	height:					16px;
+	background-image:		url(image/icon/select_deselect.png);
+	background-repeat:		no-repeat;
+	margin-left:			1px;
+	margin-right:			1px;
+}
+
+a.tabQuery-button-add {
+	display: 				inline-block;
+	width:					22px;
+	height:					22px;
+	background-image:		url(image/icon/save_cancel_delete_22.png);
+	background-position:	-44px 0px;
+	background-repeat:		no-repeat;
+	margin-left:			1px;
+	margin-right:			1px;
+}
+
+a.tabQuery-button-add-small {
+	display: 				inline-block;
+	width:					16px;
+	height:					16px;
+	background-image:		url(image/icon/select_deselect.png);
+	background-position:	-20px -16px;
+	background-repeat:		no-repeat;
+	margin-left:			1px;
+	margin-right:			1px;
+}
+
+a.tabQuery-button-label-small {
+	display: 				inline-block;
+	width:					16px;
+	height:					16px;
+	background-image:		url(image/icon/calendar.png);
+	background-repeat:		no-repeat;
+	margin-left:			1px;
+	margin-right:			1px;
+}
+
+a.tabQuery-button-camera {
+	background-image:		url(image/icon/btn-camera.png);
+	background-position:	center center;
+}
+
+
+/***** table *******************************************/
+.tabQuery-table {
+	color:				#222222;
+	font-size:			12px;
+	
+	border-top:			1px solid #999999;
+	border-left:		1px solid #999999;
+	
+	border-bottom:		0px solid #999999;
+	border-right:		0px solid #999999;
+
+	background-color:	#EDF8FA; 
+	empty-cells: 		show;
+}
+
+.tabQuery-table th,
+.tabQuery-table td {
+	overflow: 				hidden;
+	padding:				0px;	
+
+	border-bottom:		1px solid #999999;
+	border-right:		1px solid #999999;   /* default is resizable;  fixed is not resizable */
+
+	border-top:			0px solid #999999;
+	border-left:		0px solid #999999;
+
+	padding: 			2px 5px 2px 5px;
+}
+
+.tabQuery-table .tr-odd {
+	background-color:	#EDF8FA; 
+}
+
+.tabQuery-table .tr-even {
+	background-color:	#E2F4FB; 
+}
+
+.tabQuery-table .tr-highlight {
+	background-color: 	#dddddd; 
+}
+
+.tabQuery-table .tr-selected {
+	background-color: 	#F7B896; 
+}
+
+.tabQuery-table-header {
+	height:					22px;
+	background-color:  		#eeeeee;  /*#FCE9CD;*/
+	text-align:				center;
+	font-size:				12px;
+	font-weight:			bold;
+	white-space:			nowrap;
+}
+
+/************************************************************/
+.tabQuery-sort {
+	cursor:					pointer;
+	display:				inline-block;
+	width:					14px;
+	height:					14px;
+	background-image:		url(image/icon/sortable_all.png);
+	background-position:	0px 0px;
+	background-repeat:		no-repeat;
+	vertical-align:			middle;
+}
+
+.tabQuery-sort-asc {
+	background-position:	-14px center;
+}
+
+.tabQuery-sort-desc {
+	background-position:	-28px center;
+}
+
+input.tabQuery-button {
+	font-size:	10px;
+}

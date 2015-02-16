@@ -1,0 +1,116 @@
+/************************************************************************************/
+/*  JQuery Plugin Main Menu 							  	                     	*/
+/*  Author:	William Liu                                                            	*/
+/*  Date: 	2012-2-15      															*/
+/*  Files: 	jquery.lwh.mmenu.js ;  jquery.lwh.mmenu.css								*/
+/************************************************************************************/
+ul.lwhMMenu {
+	position:			relative;
+	display:			block;
+	width:				100%;
+	height:				40px; 
+	
+	padding:			0px;
+	margin:				0px;
+	
+	float:				none;
+	list-style:			none outside none;
+	
+	border: 				1px solid #1A52A1;
+	border-radius:			5px;
+	/* Firefox Chrome Opera */
+	box-shadow:				2px 2px 2px #000000;
+	/* For IE 8 */
+	-ms-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+	/** For IE 5.5 - 7 */
+	filter: 	progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');			
+	
+	
+	background-image:		url(image/menu/lwhMMenu-bg.png);
+	background-position: 	center center;
+	background-repeat:		repeat-x;
+	
+	white-space:			nowrap;
+}
+
+ul.lwhMMenu li {
+	position:			relative;
+	display:			inline;
+	height:				40px;
+	
+	line-height:		40px;
+	padding:			0px;
+	
+	border-top:			0px;
+	border-bottom:		0px;
+	border-left:		0px solid #cccccc;
+	border-right:		0px solid #666666;
+	float:				left;
+	
+	color:				#eeeeee;
+	font-size:			14px;
+	font-weight:		bold;
+}
+
+ul.lwhMMenu li:hover,
+ul.lwhMMenu li.liHover {
+	color:				#ffffff;
+	background-color:	#999999;
+}
+
+ul.lwhMMenu li.menu:hover,
+ul.lwhMMenu li.menuliHover {
+	border-radius:		5px 5px 0px 0px;
+	color:				#ffffff;
+	background-color:	#999999;
+}
+
+ul.lwhMMenu li div,
+div.lwhMMenu-div {
+	position:			absolute;
+	top:				40px;
+	left:				0px;
+	
+	display: 			none;
+	width:				240px;
+	height:				60px;
+	line-height:		1em;
+
+	border-top:			0px;
+	border-bottom:		1px solid #cccccc;
+	border-left:		1px solid #cccccc;
+	border-right:		1px solid #cccccc;
+	
+	background-color:   #999999;
+
+	border-radius:		0px 5px 5px 5px;
+
+	box-shadow:			2px 2px 2px #000000;
+	/* For IE 8 */
+	-ms-filter: 		progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+	/** For IE 5.5 - 7 */
+	filter: 			progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+
+	padding:			5px;
+	
+	z-index:			1999;
+}
+
+ul.lwhMMenu li:hover div {
+	display:			block;
+}
+
+ul.lwhMMenu li a{
+	cursor: 			pointer;
+	display:			inline-block;
+	height:				40px;
+	line-height:		40px;
+	border:				0px solid red;
+
+	padding-left:		20px;
+	padding-right:		20px;
+}
+
+ul.lwhMMenu li a.menu{
+	background:			url(image/menu/lwhMMenu-menu.png) right center no-repeat;
+}

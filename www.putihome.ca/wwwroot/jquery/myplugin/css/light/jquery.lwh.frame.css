@@ -1,0 +1,104 @@
+div.lwhFrame {
+	position:		relative;
+	display:		block;
+	padding:		0px;
+	margin:			0px;
+	overflow:		hidden;
+}
+
+div.lwhFrame div.lwhFrame-content {
+	padding:		12px;
+}
+
+div.lwhFrame s.lt,
+div.lwhFrame s.rt,
+div.lwhFrame s.lb,
+div.lwhFrame s.rb {
+	position: 		absolute;
+	display:		inline-block;
+	width:			12px;
+	height:			12px;
+
+	background-color:	#ffffff;
+	background-image: 	url(image/frame/frame-white-cc.png);
+	background-repeat:	no-repeat;
+	z-index:			99;
+}
+
+div.lwhFrame s.tt,
+div.lwhFrame s.bb {
+	position: 		absolute;
+	display:		inline-block;
+	width:			100%;
+	height:			12px;
+	background-color:	#ffffff;
+	background-image: 	url(image/frame/frame-white-ww.png);
+	background-repeat:	repeat-x;
+	z-index:			90;
+}
+
+div.lwhFrame s.ll,
+div.lwhFrame s.rr {
+	position: 		absolute;
+	display:		inline-block;
+	width:			12px;
+	height:			100%;
+
+	background-color:	#ffffff;
+	background-image: 	url(image/frame/frame-white-hh.png);
+	background-repeat:	repeat-y;
+	z-index:			90;
+}
+
+div.lwhFrame s.lt {
+	top: 					0px;
+	left:					0px;
+	background-position: 	0px 0px;
+}
+
+div.lwhFrame s.rt {
+	top:					0px;
+	right:					0px;
+	background-position: 	-43px 0px;
+}
+
+div.lwhFrame s.lb {
+	bottom: 				0px;
+	left:					0px;
+	background-position: 	0px -43px;
+}
+
+div.lwhFrame s.rb {
+	bottom:					0px;
+	right:					0px;
+	background-position: 	-43px -43px;
+}
+
+div.lwhFrame s.tt {
+	top:	 				0px;
+	left:					0px;
+	background-position: 	0px 0px;
+}
+
+div.lwhFrame s.bb {
+	bottom: 				0px;
+	left:					0px;
+	background-position: 	0px -33px;
+}
+
+div.lwhFrame s.ll {
+	top:	 				0px;
+	left:					0px;
+	background-position: 	0px 0px;
+}
+
+div.lwhFrame s.rr {
+	top: 					0px;
+	right:					0px;
+	background-position: 	-33px 0px;
+}
+
+div.lwhFrame .ui-resizable-se {
+	bottom:	10px;
+	right:	10px;
+}

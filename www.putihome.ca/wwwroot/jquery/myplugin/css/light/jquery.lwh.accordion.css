@@ -1,0 +1,116 @@
+/************************************************************************************/
+/*  JQuery Plugin Accordion 								                       	*/
+/*  Author:	William Liu                                                            	*/
+/*  Date: 	2014-4-21      															*/
+/*  Files: 	jquery.lwh.accordion.js ;  jquery.lwh.accordion.css						*/
+/************************************************************************************/
+
+/* Menu window layout CSS */
+.lwhAccordion {
+	display:			block;
+}
+
+.lwhAccordion-title {
+	position:			relative;
+
+	line-height:		32px;
+	
+	display:			block;
+	padding-left:		25px;
+	height:				32px;
+
+	border:				0px;
+	
+	background-color:	#ffffff;
+	background-image:	none;
+	border:				0px;
+	border-bottom:		1px solid #999999;
+	
+	overflow:			hidden;
+	/*
+	background-image:	url(image/accordion/lwhAccordion-bg.png);
+	background-position: center center;
+	background-repeat:	 repeat-x;
+	*/
+}
+
+
+.lwhAccordion-title a {
+	position:			relative;
+	color:				#ffffff;
+	font-size:			14px;
+	font-weight:		bold;
+	vertical-align:		middle;
+}
+
+.lwhAccordion-body {
+	display:			inline-block;
+	padding:			2px 2px 2px 2px;
+	background-color:	#ffffff;
+	background-image:	none;
+	border:				0px;
+	padding:			0px;
+	margin:				0px;
+	border-bottom:		1px solid #999999;
+	overflow:			hidden;
+}
+
+.lwhAccordion  a
+{
+	cursor:			pointer;
+	display:		inline-block;
+	height:			25px;
+	line-height:	25px;
+	width:			260px;
+	margin:			0px;
+	border-bottom:	1px solid #dddddd;
+	overflow:		hidden;
+
+	color:				#8437B8;
+	text-decoration: 	none;
+}
+
+.lwhAccordion  a.site
+{
+	margin-left: 	-20px;
+	padding-right:	20px;
+}
+
+
+.lwhAccordion a:hover {
+	background-color:	#C0DFF7;
+	color:				#EB8F00;
+}
+
+.lwhAccordion a.selected {
+	color:					#ffffff;
+	background-color: 		#4BAFDE;
+	background-image:   	url(image/accordion/group-selected.png);
+	background-position: 	5px center;
+	background-repeat: 		no-repeat;
+	padding-left:			20px;
+	
+}
+
+.lwhAccordion .address {
+	margin-left:			-20px;
+	width:					240px;
+}
+
+.goto-event-calendar {
+	display:			inline-block;
+	cursor:				pointer;
+	color:				#1C94C4;
+	font-size:			16px;
+	width:				250px;
+	height:				32px;
+	line-height:		32px;
+	font-weight:		bold;
+	text-align:			center;
+	text-decoration:	none;
+	background-color:	#dddddd;
+}
+
+.goto-event-calendar:hover {
+	color:				#F44C09;
+}

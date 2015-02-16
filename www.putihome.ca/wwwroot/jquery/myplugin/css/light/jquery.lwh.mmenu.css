@@ -1,0 +1,181 @@
+/************************************************************************************/
+/*  JQuery Plugin Main Menu 							  	                     	*/
+/*  Author:	William Liu                                                            	*/
+/*  Date: 	2012-2-15      															*/
+/*  Files: 	jquery.lwh.mmenu.js ;  jquery.lwh.mmenu.css								*/
+/************************************************************************************/
+ul.lwhMMenu {
+	position:			relative;
+	display:			block;
+	width:				100%;
+	height:				30px; 
+	
+	padding:			0px;
+	margin:				0px;
+	
+	float:				none;
+	list-style:			none outside none;
+	
+	/* border: 				1px solid #1A52A1; */
+	/* border-radius:			5px; */
+	
+	
+	/* Firefox Chrome Opera */
+	/* box-shadow:				2px 2px 2px #000000; */
+	/* For IE 8 */
+	/* -ms-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); */
+	/** For IE 5.5 - 7 */
+	/* filter: 	progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); */
+
+	
+	background-image:		url(image/menu/lwhMMenu-bg.png);
+	background-position: 	center center;
+	background-repeat:		repeat-x;
+	
+	white-space:			nowrap;
+}
+
+ul.lwhMMenu li.lwhMMenu-li {
+	position:			relative;
+	display:			inline;
+	height:				30px;
+	
+	line-height:		30px;
+	padding:			0px;
+	
+	border-top:			0px;
+	border-bottom:		0px;
+	border-left:		0px solid #cccccc;
+	border-right:		0px solid #666666;
+
+	float:				left;
+}
+
+ul.lwhMMenu li.lwhMMenu-li:hover,
+ul.lwhMMenu li.lwhMMenu-liHover {
+	color:				#ffffff;
+	background-color:	#2c7fcc;
+}
+
+ul.lwhMMenu li.lwhMMenu-menu:hover,
+ul.lwhMMenu li.lwhMMenu-menuliHover {
+	border-radius:		5px 5px 0px 0px;
+	color:				#ffffff;
+	background-color:	#2c7fcc;
+}
+
+div.lwhMMenu-div {
+	position:			absolute;
+	top:				30px;
+	left:				0px;
+	
+	display: 			none;
+	width:				180px;
+	/* min-height:			100px; */
+	line-height:		1.2em;
+
+	border-top:			0px;
+	border-bottom:		1px solid #1c9edb;
+	border-left:		1px solid #1c9edb;
+	border-right:		1px solid #1c9edb;
+	
+	background-color:   #2c7fcc;
+
+	border-radius:		0px 5px 5px 5px;
+
+	/* box-shadow:			2px 2px 2px #000000; */
+	/* For IE 8 */
+	/* -ms-filter: 		progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); */
+	/** For IE 5.5 - 7 */
+	/* filter: 			progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000'); */
+
+	padding:			5px 5px 5px 5px;
+	
+	z-index:			1999;
+}
+
+ul.lwhMMenu li.lwhMMenu-li:hover div.lwhMMenu-div {
+	display:			block;
+}
+
+ul.lwhMMenu li.lwhMMenu-li a.lwhMMenu-a{
+	cursor: 			pointer;
+	display:			inline;
+	height:				30px;
+	line-height:		30px;
+	border:				0px solid red;
+
+	padding-left:		20px;
+	padding-right:		20px;
+	
+	color:				#ffffff;
+	font-size:			12px;
+	font-weight:		bold;
+	text-decoration:	none;
+}
+
+ul.lwhMMenu li.lwhMMenu-li a.lwhMMenu-menu{
+	background:			url(image/menu/lwhMMenu-menu.png) right center no-repeat;
+}
+
+div.lwhMMenu-white {
+	position:			relative;
+	width:				100%;
+	height:				100%;
+	background-color:	#ffffff;
+	
+	border-radius:		5px 5px 5px 5px;
+	overflow:			hidden;
+}
+
+
+ul.lwhMMenu-items {
+	padding: 	0px;
+	margin:		0px;
+	list-style:	none;
+}
+
+li.lwhMMenu-item {
+	display:		block;
+	width:			100%;
+	cursor:			pointer;
+	color:			#4096BE;
+	border-bottom: 	1px dotted #cccccc;
+	padding:		4px 6px 4px 20px;
+}
+
+li.lwhMMenu-item-category {
+	display:		block;
+	width:			100%;
+	cursor:			default;
+	color:			#CD6868;
+	font-size:		12px;
+	font-weight:	bold;
+	border-bottom: 	1px solid #CD6868;
+	/*border-bottom: 	1px dotted #999999; */
+	padding:		4px 6px 4px 10px;
+}
+
+
+
+li.lwhMMenu-item a.menu-item {
+	color:				#4096BE;
+	text-decoration:	none;
+	display:			block;
+}
+
+li.lwhMMenu-item-category a.menu-item {
+	color:				#CD6868;
+	text-decoration:	none;
+	display:			block;
+}
+
+
+li.lwhMMenu-item:hover,
+li.lwhMMenu-item:hover a.menu-item,
+li.lwhMMenu-itemHover {
+	color:				blue;
+	background-color:	#cccccc;
+}
+
+
